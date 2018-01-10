@@ -1,6 +1,6 @@
 'use strict';
 
-//Asks user to guess question about me
+//Sections promts user questions about me
 
 var NumCount = 0;
 var userHairC = prompt('What Color is my hair? Brown, Red or Blonde?').toLowerCase();
