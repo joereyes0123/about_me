@@ -1,53 +1,56 @@
 'use strict';
 
-//Sections promts user questions about me
+//Sections prompts user questions about me
 
 var NumCount = 0;
-var userHairC = prompt('What Color is my hair? Brown, Red or Blonde?').toLowerCase();
 
-    if(userHairC === 'brown'){
-    alert('that is correct');
-    NumCount++; 
-        }else{
-        alert('WRONG');
-            }
-    console.log('User guessed hair color' + userHairC);
+var userName = prompt('what is your name?');
+
+var userHairC = prompt('Is my hair color Brown?, Yes or No?').toLowerCase();
+
+if(userHairC === 'yes' || userHairC === 'y'){
+  alert('that is correct');
+  NumCount++;
+}else{
+  alert('WRONG');
+}
+console.log('User guessed hair color as ' + userHairC);
 
 
-var pets = parseInt(prompt('How many pets do you think I have 0, 1 or 2?'));
-    if(pets === 0){
-    alert('that is correct');
-    NumCount++; 
-        }else{
-        alert('WRONG');
-    }
-    console.log('user guessed number of pets' + pets);
+var pets = parseInt(prompt('Do I own any pets?, Yes or No').toLowerCase());
+if(pets === 'yes' || pets === 'y'){
+  alert('that is correct');
+  NumCount++;
+}else{
+  alert('WRONG');
+}
+console.log('user guessed pets question as' + pets);
 
-var userHand = prompt('Guess my hand dominance, Right or Left?').toLowerCase();
-    if(userHand === 'right'){
-    alert('that is correct');
-    NumCount++; 
-        }else{
-        alert('WRONG');
-    }
-    console.log('user guessed Hand Dominance' + userHand);
+var userHand = prompt('Am I left handed?, Yes or No').toLowerCase();
+if(userHand === 'yes' || userHand === 'y'){
+  alert('that is correct');
+  NumCount++;
+}else{
+  alert('WRONG');
+}
+console.log('user answer hand dominance as' + userHand);
 
 var userEyeColor = prompt('Are my eyes Brown, Yes or No ').toLowerCase();
-    if(userEyeColor === 'yes'){
-    alert('that is correct');
-    NumCount++; 
-        }else{
-        alert('WRONG');
-    }
-    console.log('user guessed Hand Dominance' + userEyeColor);
+if(userEyeColor === 'yes' || userEyeColor === 'y'){
+  alert('that is correct');
+  NumCount++;
+}else{
+  alert('WRONG');
+}
+console.log('user guessed Hand Dominance' + userEyeColor);
 
-var userEthnic = prompt('What in my background? Latino, BLack, White ').toLowerCase();
-    if(userEthnic === 'latino'){
-    alert('that is correct');
-    NumCount++; 
-        }else{
-        alert('WRONG');
-    }
-    console.log('user guessed Hand Dominance' + userEthnic);
+var userEthnic = prompt('Am I a white male ').toLowerCase();
+if(userEthnic === 'yes' || userEthnic === 'y'){
+  alert('that is correct');
+  NumCount++; 
+}else{
+  alert('WRONG');
+}
+console.log('user guessed ethnic background as' + userEthnic);
 
-    alert( "you answered " + NumCount + " questions correctly");
+alert( userName + 'you answered ' + NumCount + ' questions correctly');
