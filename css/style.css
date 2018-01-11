@@ -1,6 +1,13 @@
-h1 {
+body {
+  margin: 25px;
+}
+h1 { 
+  color: rgb(40, 12, 199); 
+  font-size: 30px;
+}
+ 
 
-  <ul class="nav-items">
+  /* <ul class="nav-items">
   call .nav-items
   <il id="test">
   call #test
@@ -23,4 +30,4 @@ h1 {
     border: 1px dotted red;
     
     margin: 0px auto;
-  }
+  } */
