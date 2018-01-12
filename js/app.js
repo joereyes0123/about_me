@@ -104,18 +104,20 @@ question6();
 // //Question 7: Asks favorite countries question
 function question7() {
   var favCountries = ['thailand', 'spain', 'jordan', 'turkey'];
-  for(var userCount1 = 0 ; userCount1 < 7 ; userCount1++){
+  for(var userCount1 = 0 ; userCount1 < 4 ; userCount1++){
 
     var guessCountry = prompt('What is one of my favorite countries?').toLowerCase();
     for (var i = 0; i < favCountries.length; i++){
       if (guessCountry === favCountries[i]){
-        alert('Thats right, I love that place');
-        userCount1 = 7;
+        alert('Holy cow you guessed right, I love that place');
+        userCount1 = 4;
         NumCount++;
       }
     }
-    if(userCount1 < 7){
+    if(userCount1 < 3){
       alert('guess again');
+    }else{
+      alert('Sorry youre out of tries, my favorite countries are Thailand, Spain, Jordan and Turkey');
     }
   }
   console.log('user guessed favorite country as' + favCountries);
