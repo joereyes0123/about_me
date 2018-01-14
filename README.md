@@ -1,2 +1,3 @@
 # about_me
-week 1 about me projectfor Code 201
+week 1 about me project for Code 201
+collaborated with Carl Olson
