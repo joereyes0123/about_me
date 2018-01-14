@@ -1,8 +1,14 @@
 body {
   margin: 25px;
+  text-align: center;
+  background-color: rgb(31, 172, 228);
 }
 h1 { 
   color: rgb(40, 12, 199); 
   font-size: 30px;
+  padding: 20px;
 }
  
+li{
+  padding: 5px;
+}
